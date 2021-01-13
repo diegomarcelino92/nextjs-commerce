@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Typography } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 
 import { MAX_WIDTH } from '../../helpers/theme';
 
@@ -10,10 +10,11 @@ const Footer: React.FC = () => (
   <Box
     display="flex"
     justifyContent="center"
-    bgcolor="#333333"
-    color="#ffffff"
+    bgcolor="#e0e0e0"
     height="400px"
     padding="20px 0 50px 0"
+    component="footer"
+    width="100%"
   >
     <Box
       width="100%"

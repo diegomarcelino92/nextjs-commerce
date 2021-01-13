@@ -5,11 +5,12 @@
   },
   "extends": [
     "eslint:recommended",
+    "plugin:react/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
     "plugin:import/typescript",
     "airbnb",
+
     "prettier/flowtype",
     "prettier/react",
     "plugin:prettier/recommended"
@@ -24,12 +25,26 @@
   },
   "plugins": ["prettier", "react", "@typescript-eslint", "react-hooks"],
   "rules": {
+    "import/extensions": ["error", "never", {}],
     "prettier/prettier": "error",
     "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-
-    "import/extensions": ["never"]
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "react/prop-types": [2, { "ignore": ["children"] }]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }
