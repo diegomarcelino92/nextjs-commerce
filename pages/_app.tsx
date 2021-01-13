@@ -1,6 +1,6 @@
 import { AppProps } from 'next/app';
 
-import { ThemeProvider } from '@material-ui/core';
+import { ThemeProvider, CssBaseline } from '@material-ui/core';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 
 import theme from '../src/configuration/theme';
@@ -11,6 +11,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <StyledThemeProvider theme={theme}>
+        <CssBaseline />
         <Layout>
           <Component {...pageProps} />
         </Layout>
