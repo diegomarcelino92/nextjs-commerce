@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
+
 import { Box } from '@material-ui/core';
+
 import Header from '../Header';
 import Footer from '../Footer';
-
-// import { Container } from './styles';
 
 const Layout: React.FC = ({ children }) => {
   return (

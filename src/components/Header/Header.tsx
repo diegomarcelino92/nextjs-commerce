@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   AppBar,
   Toolbar,
@@ -7,8 +8,6 @@ import {
   Button,
 } from '@material-ui/core';
 import { Menu } from '@material-ui/icons';
-
-// import { Container } from './styles';
 
 const Header: React.FC = () => {
   return (
