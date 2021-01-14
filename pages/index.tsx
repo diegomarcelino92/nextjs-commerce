@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import Home from '../src/views/Home';
+import Home from '../src/views/home';
 
 export default function Index() {
   return (

@@ -4,7 +4,7 @@ import { Box } from '@material-ui/core';
 
 import { MAX_WIDTH } from '../../helpers/theme';
 
-import List from './components/List';
+import List from './components/list';
 
 const Footer: React.FC = () => (
   <Box

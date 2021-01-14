@@ -12,7 +12,7 @@ const spinning = keyframes`
 
 export const Container = styled.div`
   width: 100%;
-  margin: 30px 0;
+  margin: 30px 10px;
   padding: 30px;
   border: 1px solid #c0c0c0;
   border-radius: 10px;

@@ -5,7 +5,7 @@ import { Person, PersonAdd, Apple, ShoppingBasket } from '@material-ui/icons';
 
 import { MAX_WIDTH } from '../../helpers/theme';
 
-import HeaderInput from './components/HeaderInput';
+import HeaderInput from './components/headerInput';
 
 const Header: React.FC = () => {
   return (

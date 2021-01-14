@@ -1,4 +1,4 @@
-import { Children } from 'react';
+import React, { Children } from 'react';
 
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 

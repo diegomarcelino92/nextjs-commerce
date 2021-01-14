@@ -7,7 +7,7 @@ import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 
 import theme from '../src/configuration/theme';
 
-import Layout from '../src/components/Layout';
+import Layout from '../src/components/layout';
 
 function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
