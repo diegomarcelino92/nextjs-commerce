@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { AppProps } from 'next/app';
 
@@ -10,6 +10,14 @@ import theme from '../src/configuration/theme';
 import Layout from '../src/components/Layout';
 
 function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    const jssStyles = document.querySelector('#jss-server-side');
+
+    if (jssStyles) {
+      jssStyles.parentElement.removeChild(jssStyles);
+    }
+  }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <StyledThemeProvider theme={theme}>

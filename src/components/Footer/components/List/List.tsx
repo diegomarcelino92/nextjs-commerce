@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Box, Typography, List as ListMUI } from '@material-ui/core';
 
+import { generate } from 'shortid';
+
 import { StyledListItem } from './styles';
 
 type ItemProps = {
@@ -20,7 +22,9 @@ const List = ({ title, items, children }: ListProps) => (
     {items && (
       <ListMUI>
         {items.map((item) => (
-          <StyledListItem button>{item.title}</StyledListItem>
+          <StyledListItem button key={generate()}>
+            {item.title}
+          </StyledListItem>
         ))}
       </ListMUI>
     )}
